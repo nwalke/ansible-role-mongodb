@@ -27,7 +27,7 @@ To change the list of packages to install:
 
     - hosts: nosql
       roles:
-        - { role: tubaguy50035.mongodb }
+        - { role: nwalke.mongodb }
 
 ## License
 
