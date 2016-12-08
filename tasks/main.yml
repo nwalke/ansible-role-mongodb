@@ -1,14 +1,6 @@
 ---
 # This role deploys the mongodb processes and sets up settings.
-- name: debug what's going on
-  debug:
-    msg: "Distribution: {{ansible_distribution}}    OS Family: {{ ansible_os_family }}"
-
 - name: Include OS-specific variables.
   include_vars: "{{ ansible_distribution }}.yml"
 
-- include: setup-RedHat.yml
-  when: ansible_os_family == 'RedHat'
-
-- include: setup-Debian.yml
-  when: ansible_os_family == 'Debian'
+- include: "setup-{{ ansible_os_family }}.yml"

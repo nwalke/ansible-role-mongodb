@@ -2,11 +2,11 @@
 dependencies: []
 
 galaxy_info:
-  author: lesmyrmidons
+  author: nwalke
   description: MongoDB for RedHat/CentOS/Debian 64Bit.
   company: ""
   license: "license (BSD, MIT)"
-  min_ansible_version: 1.4
+  min_ansible_version: 2.2
   platforms:
   - name: EL
     versions:

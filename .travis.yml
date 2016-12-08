@@ -36,11 +36,8 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
-  # Request a page via Apache, to make sure Apache is running and responds.
-  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm curl http://localhost:27017/'
-
-after_failure:
-  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm cat /var/log/redis/redis-server.log'
+#after_failure:
+#  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm cat /var/log/redis/redis-server.log'
 
 #notifications:
 #  webhooks: https://galaxy.ansible.com/api/v1/notifications/
