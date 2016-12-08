@@ -39,5 +39,5 @@ script:
 #after_failure:
 #  - 'docker exec --tty "$(cat ${container_id})" env TERM=xterm cat /var/log/redis/redis-server.log'
 
-#notifications:
-#  webhooks: https://galaxy.ansible.com/api/v1/notifications/
+notifications:
+ webhooks: https://galaxy.ansible.com/api/v1/notifications/
