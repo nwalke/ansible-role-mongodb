@@ -1,9 +1,11 @@
 ansible-role-mongodb
 ====================
 
-[![Build Status](https://travis-ci.org/lesmyrmidons/ansible-role-mongodb.svg?branch=master)](https://travis-ci.org/lesmyrmidons/ansible-role-mongodb)
+[![Build Status](https://travis-ci.org/nwalke/ansible-role-mongodb.svg?branch=master)](https://travis-ci.org/nwalke/ansible-role-mongodb)
 
 Ansible Role - Mongodb on RHEL/CentOS and Debian/Ubuntu.
+
+Forked from https://github.com/lesmyrmidons/ansible-role-mongodb
 
 ## Requirements
 
@@ -25,7 +27,7 @@ To change the list of packages to install:
 
     - hosts: nosql
       roles:
-        - { role: lesmyrmidons.mongodb }
+        - { role: tubaguy50035.mongodb }
 
 ## License
 
